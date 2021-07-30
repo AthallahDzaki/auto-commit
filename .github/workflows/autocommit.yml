@@ -21,8 +21,18 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "${{ secrets.USERNAME }}"
-          git add -A
-          git commit -m "Mantap"
+          arr[0]="Mantap"
+          arr[1]="So Bakso"
+          arr[2]="Banteng Number One"
+          arr[3]="Makmu Kiper"
+          arr[4]="YNTKS"
+          arr[5]="24a166f6a9157bff876a3f64095e717c"
+          arr[6]="MAKAN BANG"
+          arr[7]="Master Kobuser"
+          
+          rand=$[$RANDOM % ${#arr[@]}]
+          
+          git commit -m "${arr[$rand]}"
       - name: Push Back
         uses: ad-m/github-push-action@v0.5.0
         with:
