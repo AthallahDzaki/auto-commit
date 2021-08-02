@@ -19,8 +19,8 @@ jobs:
           echo $d > LAST_UPDATED
       - name: Commit changes
         run: |
-          git config --local user.email "${{ secrets.EMAIL }}"
-          git config --local user.name "${{ secrets.USERNAME }}"
+          git config --local user.email athallahdzaki@gmail.com
+          git config --local user.name AthallahDzaki
           arr[0]="Mantap"
           arr[1]="So Bakso"
           arr[2]="Banteng Number One"
