@@ -31,7 +31,7 @@ jobs:
           arr[7]="Master Kobuser"
           
           rand=$[$RANDOM % ${#arr[@]}]
-          
+          git add -A
           git commit -m "${arr[$rand]}"
       - name: Push Back
         uses: ad-m/github-push-action@v0.5.0
