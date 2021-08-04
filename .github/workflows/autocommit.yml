@@ -2,7 +2,7 @@ name: Auto commit
 on:
   push:
     branches:
-      - king
+      - master
   schedule:
     - cron: '0 7,8,9,10,11 * * *'
 jobs:
